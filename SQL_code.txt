@@ -1,0 +1,33 @@
+INSTRUCTIONS TO CREATE NECESSARY DATABASE/TABLE AS WELL AS TO VIEW TABLE CONTENTS
+RUN CODE IN mySQL ON ACTIVE CONNECTION TO LOCALHOST SERVER
+
+to create the database called stockData:
+
+CREATE DATABASE stockData;
+
+(run in mySQL)
+
+
+to create the table called stocks:
+
+USE stockData;
+
+CREATE TABLE stocks (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  symbol VARCHAR(10),
+  date DATE,
+  open DECIMAL(10, 2),
+  high DECIMAL(10, 2),
+  low DECIMAL(10, 2),
+  close DECIMAL(10, 2),
+  volume BIGINT
+);
+
+(run in mySQL)
+
+To view stock table:
+
+USE stockData;
+SELECT * FROM stocks;
+
+(run in mySQL)
